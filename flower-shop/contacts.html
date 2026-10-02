@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Bloom & Joy</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Bloom<span>&amp;Joy</span></a>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="subscription.html">Подписка</a>
+        <a href="contacts.html" class="active">Контакты</a>
+      </nav>
+      <div style="display:flex;align-items:center;gap:1rem">
+        <a href="cart.html" class="cart-btn">
+          🛒 Корзина
+          <span class="cart-count" style="display:none">0</span>
+        </a>
+        <button class="menu-toggle" aria-label="Меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:2rem">
+    <div class="section-title">
+      <h2 class="cat-title">Контакты</h2>
+      <p class="cat-subtitle">Мы всегда рады помочь вам выбрать идеальный букет</p>
+    </div>
+
+    <div class="contacts-grid">
+      <div class="contact-info" style="background: linear-gradient(160deg, #fff 60%, var(--light-cyan)); border-top: 4px solid var(--celadon);">
+        <h3>Как нас найти</h3>
+        <div class="contact-item">
+          <span>📍</span>
+          <div>
+            <strong>Адрес</strong>
+            Большая Печерская, 24<br>
+            Нижний Новгород
+          </div>
+        </div>
+        <div class="contact-item">
+          <span>📞</span>
+          <div>
+            <strong>Телефон</strong>
+            <a href="tel:+79108900068">+7 (910) 890-00-68</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span>✉️</span>
+          <div>
+            <strong>Email</strong>
+            <a href="mailto:info@bloomjoy.ru">info@bloomjoy.ru</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span>🕐</span>
+          <div>
+            <strong>Режим работы</strong>
+            Ежедневно 9:00 — 20:00
+          </div>
+        </div>
+        <div class="contact-item">
+          <span>🚚</span>
+          <div>
+            <strong>Доставка</strong>
+            По городу от 90 минут<br>
+            Самовывоз бесплатно
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form" style="background: linear-gradient(160deg, #fff 50%, var(--pink-mist)); border-top: 4px solid var(--raspberry);">
+        <h3 style="margin-bottom:1.5rem;color:var(--raspberry)">Напишите нам</h3>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required placeholder="Как к вам обращаться">
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form-group">
+            <label for="subject">Тема</label>
+            <select id="subject" name="subject">
+              <option value="order">Заказ букета</option>
+              <option value="subscription">Подписка</option>
+              <option value="wedding">Свадебная флористика</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" placeholder="Расскажите, что вам нужно..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

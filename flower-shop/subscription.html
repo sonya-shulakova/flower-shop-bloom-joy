@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Цветочная подписка — Bloom & Joy</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Bloom<span>&amp;Joy</span></a>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="subscription.html" class="active">Подписка</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div style="display:flex;align-items:center;gap:1rem">
+        <a href="cart.html" class="cart-btn">
+          🛒 Корзина
+          <span class="cart-count" style="display:none">0</span>
+        </a>
+        <button class="menu-toggle" aria-label="Меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:2rem">
+    <div class="section-title">
+      <h2 class="cat-title">Цветочная подписка</h2>
+      <p class="cat-subtitle">Не ждите повода — создавайте его сами</p>
+    </div>
+
+    <div style="max-width:800px;margin:0 auto 3rem;text-align:center">
+      <p style="font-size:1.15rem;color:#555;margin-bottom:2rem">
+        Подписка на цветы — это регулярная доставка свежих букетов прямо к вашей двери или в офис. 
+        Выбирайте частоту и размер, а мы позаботимся о красоте и свежести.
+      </p>
+    </div>
+
+    <div class="features" style="margin-bottom:3rem">
+      <div class="feature">
+        <div class="plan-icon">🌸</div>
+        <h3>Еженедельно</h3>
+        <p>Каждую неделю новый букет. Идеально для дома и офиса.</p>
+        <p style="margin-top:1rem;font-size:1.4rem;font-weight:700;color:var(--raspberry)">от 14 900 ₽</p>
+      </div>
+      <div class="feature">
+        <div class="plan-icon">🌷</div>
+        <h3>Раз в 2 недели</h3>
+        <p>Оптимальный баланс свежести и бюджета.</p>
+        <p style="margin-top:1rem;font-size:1.4rem;font-weight:700;color:var(--raspberry)">от 8 400 ₽</p>
+      </div>
+      <div class="feature">
+        <div class="plan-icon">🌹</div>
+        <h3>Раз в месяц</h3>
+        <p>Большой праздничный букет раз в месяц.</p>
+        <p style="margin-top:1rem;font-size:1.4rem;font-weight:700;color:var(--raspberry)">от 4 800 ₽</p>
+      </div>
+    </div>
+
+    <!-- Unified How it works + Advantages -->
+    <div class="how-block">
+      <div class="how-header">
+        <h2>Как это работает</h2>
+        <p>Всего три простых шага до регулярных букетов</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>Выберите тариф</h4>
+          <p>Еженедельно, раз в 2 недели или раз в месяц — как удобно вам</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>Укажите детали</h4>
+          <p>Адрес доставки, предпочтения по цветам и стиль букетов</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>Получайте цветы</h4>
+          <p>Свежие букеты приходят по расписанию — без лишних хлопот</p>
+        </div>
+      </div>
+
+      <div class="advantages">
+        <h3>Преимущества подписки</h3>
+        <ul class="advantages-list">
+          <li><span>✓</span> Скидка до 15% по сравнению с разовыми заказами</li>
+          <li><span>✓</span> Можно менять дату и адрес доставки</li>
+          <li><span>✓</span> Персональные предпочтения по цветам и стилю</li>
+          <li><span>✓</span> Можно поставить на паузу в любое время</li>
+          <li><span>✓</span> Открытка и инструкция по уходу в каждом букете</li>
+          <li><span>✓</span> Приоритетная сборка и доставка</li>
+        </ul>
+      </div>
+
+      <div class="how-cta">
+        <a href="contacts.html" class="btn btn-primary">Оформить подписку</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
